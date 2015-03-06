@@ -38,3 +38,6 @@ document.getElementById("field1").onkeyup = function() {
 * In Node.js, there's a single thread but it is event-based. All I/O is evented and asynchronous.
 * At an I/O call, the event loop saves the callback function in a callback queue and the main thread continues other operations in the system. When the I/O operation is complete, the I/O operation can fire a interrupt like hardware interrupts to signal that. Then, the event loop puts that function back on the call stack so that that main thread can run the rest of the function with the received data.
 * Easy to learn, hard to screw up.
+
+### Access Android app data without root
+http://blog.shvetsov.com/2013/02/access-android-app-data-without-root.html
