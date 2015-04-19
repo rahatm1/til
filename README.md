@@ -41,3 +41,23 @@ document.getElementById("field1").onkeyup = function() {
 
 ### Access Android app data without root
 http://blog.shvetsov.com/2013/02/access-android-app-data-without-root.html
+
+###Javascript
+
+**Closures**
+
+```javascript
+(function(){
+   //do something...
+})();
+```
+
+* Use this for immediately-invoked function expression (IIFE)
+* Do __NOT__ use them with anonymous functions because stack traces have a hard time finding the function name. e.g.
+
+```javascript
+//bad
+var foo = (function(){
+  //do something...
+})();
+```
