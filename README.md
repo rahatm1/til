@@ -61,3 +61,60 @@ var foo = (function(){
   //do something...
 })();
 ```
+
+**Function Declarations vs. Function Expressions Notes**
+
+* Prefer Named Function Expression
+```javascript
+var foo = function foo() {
+	//do stuff
+}
+```
+* Otherwise, use anonymous functions
+```javascript
+var foo = function() {
+	//do stuff
+}
+```
+Caveat: Hard to debug because stack traces can't always print the function name.
+
+* Avoid function declarations because of hoisting e.g.
+```javascript
+function foo() {
+	//do stuff
+}
+```
+
+This is bad because the following returns 8 instead of 3.
+
+```javascript
+//bad
+function foo(){
+    function bar() {
+        return 3;
+    }
+    return bar();
+    function bar() {
+        return 8;
+    }
+}
+alert(foo());
+```
+
+Above code actually runs as:
+
+```javascript
+function foo(){
+    //define bar once
+    function bar() {
+        return 3;
+    }
+    //redefine it
+    function bar() {
+        return 8;
+    }
+    //return its invocation
+    return bar(); //8
+}
+alert(foo());
+```
