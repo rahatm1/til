@@ -118,3 +118,46 @@ function foo(){
 }
 alert(foo());
 ```
+
+###Array Initization###
+
+**Java**
+
+```Java
+int[] arr = new int[10]; //defaults to 0
+
+int[] arr = {1, 2, 3};
+```
+
+**Python**
+
+List(like Array, can contain mixed data types)
+
+```Python
+list = ["Sarah",29,30000.00]
+```
+
+Tuple(Data is immutable)
+
+```Python
+days = ("Sunday", "Monday", "Tuesday")
+```
+
+Set(Like Mathematical sets, cannot contain duplicates)
+
+```Python
+set = { 2, 3, 5}
+```
+
+
+**C**
+
+```C
+
+```
+
+**JavaScript**
+
+```JavaScript
+var cars = ["Saab", "Volvo", "BMW"]; 
+```
