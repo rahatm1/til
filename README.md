@@ -153,7 +153,7 @@ set = { 2, 3, 5}
 **C**
 
 ```C
-   int arr[10];
+   int arr[10]= {0}; //Initializes to 0
    int arr[] = {1, 2, 3};
 ```
 
