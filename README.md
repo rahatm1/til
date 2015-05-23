@@ -153,7 +153,8 @@ set = { 2, 3, 5}
 **C**
 
 ```C
-
+   int arr[10];
+   int arr[] = {1, 2, 3};
 ```
 
 **JavaScript**
