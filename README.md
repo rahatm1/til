@@ -162,3 +162,14 @@ set = { 2, 3, 5}
 ```JavaScript
 var cars = ["Saab", "Volvo", "BMW"]; 
 ```
+
+###Swapping variables without using a temp###
+
+```C
+  int a = 3, b = 5;
+ 
+ //Swap
+  a = a + b;  // a now becomes 8
+  b = a - b;  // b becomes 3
+  a = a - b;  // a becomes 5
+  ```
