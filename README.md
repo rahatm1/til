@@ -168,8 +168,13 @@ var cars = ["Saab", "Volvo", "BMW"];
 ```C
   int a = 3, b = 5;
  
- //Swap
+ //Swap V1
   a = a + b;  // a now becomes 8
   b = a - b;  // b becomes 3
   a = a - b;  // a becomes 5
+  
+  //Swap V2
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
   ```
